@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color:white;
+    font-family: "Sofia", sans-serif ;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container{
+    margin: 0 auto;
+    padding:0;
+    transition: 30s;
+    max-width: 1300px;
+    max-height: 1000px;
+    height: 700px;
+    width: 1300px;
+    background-image: url(https://xmple.com/wallpaper/gradient-purple-blue-linear-1366x768-c2-00008b-8b008b-a-90-f-14.svg);
+}
+
+/*Back*/
+.back{
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+}
+
+.back img{
+    width: 60px;
+    height: 60px;
+}
+
+/*Back Ended*/
+
+/*h1*/
+
+.about{
+    margin-top: 150px;
+    text-align: center;
+}
+.about h1{
+    color:black;
+    font-weight: 800;
+    font-size: 24px;
+}
+.about .text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.about .text p{
+    width: 1000px;
+    text-transform: capitalize;
+    margin-top: 50px;
+    font-weight: 300;
+    font-size: 18px;
+}

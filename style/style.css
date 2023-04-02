@@ -1,0 +1,306 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color:white;
+    font-family: "Sofia", sans-serif ;
+}
+
+
+.container{
+    margin: 0 auto;
+    padding:0;
+    display: grid;
+    justify-content: center;
+    transition: 30s;
+    max-width: 1300px;
+    max-height: 1000px;
+    height: 700px;
+    width: 1300px;
+    background-image: url(https://xmple.com/wallpaper/gradient-purple-blue-linear-1366x768-c2-00008b-8b008b-a-90-f-14.svg);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    max-height: 130px;
+    margin-top: 20px;
+}
+.header .logo img{
+    width: 150px;
+    height: 130px;
+}
+
+/*Links*/
+
+.header .links nav ul{
+    list-style: none;
+    display: flex;
+    font-weight: 700;
+}
+.header .links nav ul li{
+    margin: 30px;
+    cursor: pointer;
+}
+.header .links{
+    margin-left: 130px;
+}
+
+/*Link End*/
+
+/*hamburger*/
+.header .hamburger .burger div{
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    color: white;
+    margin: 2px;
+    transition: 2s;
+    border-radius: 5px;
+}
+.header .hamburger{
+    margin-left: 230px;
+    cursor: pointer;
+}
+
+/*Hamburger End*/
+
+/*Hamburger Links*/
+
+.burgerlinks{
+    position: absolute;
+    margin-top: 110px;
+    display: grid;
+    justify-content: right;
+    width: 1090px;
+    font-weight: 800;
+    font-size: 12px;
+    visibility: hidden;
+    margin-left: 10px;
+}
+.burgerlinks nav ul{
+    list-style: none;
+}
+.burgerlinks nav ul li{
+    margin: 12px;
+    background-color: black;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.burgerlinks a{
+    user-select: none;
+    text-decoration: none;
+    color:white;
+}
+
+/*Hamburger Links End*/
+
+/*Hamburger click*/
+
+.hamburger .burger.burger.active > div:nth-child(1){
+    transform: rotate(45deg) translate(0px, 10px);
+    margin-top: -3px; 
+    background-color: rgb(75, 0, 250); 
+}
+.hamburger .burger.burger.active > div:nth-child(2){
+    opacity:0;
+    background-color: rgb(75, 0, 250);
+}
+.hamburger .burger.burger.active > div:nth-child(3){
+    transform: rotate(-45deg) translate(0px, -11px);
+    margin-top: 4px;
+    background-color: rgb(75, 0, 250);
+}
+
+.burgerlinks.active{
+    visibility: visible;
+}
+ nav ul li:hover{
+    color:aqua;
+}
+.burgerlinks a:hover{
+    color: aqua;
+}
+
+/*Hamburger Click End*/
+
+/*Cards*/
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.cards .card{
+    border-radius: 10px;
+    width: 200px;
+    height: 350px;
+    background-color: black;
+}
+.cards .card img{
+    width: 200px;
+    height: 250px;
+    margin-top: 5px;
+    transition: 1s;
+    position: absolute;
+}
+
+
+/*Show*/
+
+.show1{
+    background-color: aqua;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 800;
+    position: relative;
+    margin-top: 110px;
+    margin-left: 35px;
+    opacity: 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.show1 a{
+    text-decoration: none;
+    user-select: none;
+    color:white;
+}
+
+/*Hovers*/
+
+ .card:hover .monkey{
+    filter: blur(4px);
+}
+.card:hover .show1{
+    opacity: 1;
+}
+
+/*Hovers End*/
+
+/*Music*/
+
+.music{
+    height: 50px;
+    margin-top: 10px;
+}
+.music audio{
+    width: 200px;
+    height: 40px;
+}
+.singer{
+    font-size: 6px;
+    font-weight: 800;
+    margin-top: 115px;
+    text-align: center;
+}
+
+/*Music End*/
+
+/*Modal*/
+
+.modal{
+    text-align: center;
+    width: 1139px;
+    display: grid;
+    justify-content: center;
+}
+.modal .text{
+    background-color: aqua;
+    color:white;
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    cursor:pointer;
+}
+
+.window{
+    position: fixed;
+    max-height: 1000px;
+    height: 700px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    text-transform: capitalize;
+}
+.window .window-text{
+    background-color: rgb(43, 0, 145);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    width: 800px;
+    height: 200px;
+}
+
+.line{
+    width: 800px;
+    border: 1px solid aqua;
+    background-color: aqua;
+}
+
+.inputs input{
+    border-radius: 10px;
+    height: 30px;
+    background-color: aqua;
+}
+::placeholder{
+    color:white;
+    padding: 10px;
+    font-family: "Sofia", sans-serif ;
+}
+.send{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.send-button{
+    background-color: aqua;
+    width: 70px;
+    height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.close-button{
+    background-color: aqua;
+    width: 70px;
+    height: 25px;
+    border-radius: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.send-button:hover{
+    color:black;
+}
+.close-button:hover{
+    color:black;
+}
+.problem-text{
+    margin-top: 5px;
+}
+
