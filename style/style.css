@@ -304,3 +304,47 @@ body{
     margin-top: 5px;
 }
 
+/*Responsive*/
+
+@media (max-width:1000px){
+    .logo{
+    display: none;
+    }
+    .header{
+        width: 800px;
+        display: grid;
+        margin-top: 0px;
+        height: 40px;
+    }
+    .hamburger{
+        width: 50px;
+        padding-left: 170px;
+    }
+    
+    .container{
+        max-width: 100%;
+        height: 100%;
+     }
+
+    .cards{
+        display: grid; 
+        width: 500px;
+        margin-top: 130px;
+        grid-auto-rows: 370px;
+        grid-auto-columns: 100px;
+        margin-left: 110px;
+    }
+    .burgerlinks{
+        width: 800px;
+        justify-content: center;
+        position: relative;
+        margin-top: -0px;
+    }
+    .modal{
+        width: 800px;
+    }
+    #card2{
+        grid-column-start: 2;
+    }
+
+}
