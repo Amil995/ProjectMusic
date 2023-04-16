@@ -308,6 +308,18 @@ body{
 
 @media (max-width:576px)
 {
+    .header{
+        background-color: rgb(86, 1, 165);
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        display: flex;
+        width: 60rem;
+    }
+    .logo{
+        display: none;
+    }
+    
     .cards
     {
         margin: 0;
@@ -316,11 +328,13 @@ body{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        background-image: url(https://xmple.com/wallpaper/gradient-purple-blue-linear-1366x768-c2-00008b-8b008b-a-90-f-14.svg);
+        background-color: aqua;
+        width: 60rem;
     }   
     .card:nth-child(1){
         margin-top: 1rem;
     }
+    
     .card:nth-child(2){
         margin-top: 1rem;
     }
@@ -330,12 +344,39 @@ body{
     .card:nth-child(4){
         margin-top: 1rem;
     }
-    .logo{
-        display: none;
-    }
+    
     .burgerlinks{
-        margin-top: 13rem;
-        margin-left: -8rem;
+        margin-top: 16rem;
+        margin-left: -10.5rem;
     }
-}
+    .container
+    {
+        width: 60rem;
+        background-image: none;
+    }
+    .modal .text
+    {
+        background-color: black;
+        margin-top: 1rem;
+    }
+    .modal{
+        background-color: aqua;
+        width: 60rem;
+    }
+    .hamburger 
+    {
+        margin-left: 0;
+    }
+    .burger{
+        padding: 0;
+        margin: 0;
+        left: 0px;
+        margin-left: 0px;
+    }
 
+    .links
+    {
+        font-weight: 500;
+    }
+
+}
