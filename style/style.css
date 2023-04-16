@@ -306,3 +306,36 @@ body{
 
 /*Responsive*/
 
+@media (max-width:576px)
+{
+    .cards
+    {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://xmple.com/wallpaper/gradient-purple-blue-linear-1366x768-c2-00008b-8b008b-a-90-f-14.svg);
+    }   
+    .card:nth-child(1){
+        margin-top: 1rem;
+    }
+    .card:nth-child(2){
+        margin-top: 1rem;
+    }
+    .card:nth-child(3){
+        margin-top: 1rem;
+    }
+    .card:nth-child(4){
+        margin-top: 1rem;
+    }
+    .logo{
+        display: none;
+    }
+    .burgerlinks{
+        margin-top: 13rem;
+        margin-left: -8rem;
+    }
+}
+
