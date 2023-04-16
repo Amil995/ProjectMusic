@@ -63,3 +63,37 @@ body{
     font-size: 18px;
 }
 /*Responsive*/
+
+@media (max-width:576px)
+{
+    .container
+    {
+        width: 65rem;
+        margin: 0;
+        padding: 0;
+    }
+    .back
+    {
+        margin: 0;
+        padding: 0;
+        width: 60rem;
+       
+    }
+
+    .header
+    {
+        margin: 0;
+        padding: 0;
+        width:60rem;
+    }
+    .text
+    {
+
+    }
+   
+    .about
+    {
+        margin-top: 50px;
+    }
+    
+}
