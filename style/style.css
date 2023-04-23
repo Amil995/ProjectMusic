@@ -337,10 +337,27 @@ body{
         padding: 0;
         font-size: 12px;
         display: flex;
-        width: 60rem;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: 20rem;
+        background-color: aqua;
+        
+    }
+    .links nav ul{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        background-color: aqua;
+        width: 100%;
+        display: none;
+    }
+    .links{
+        margin-right: 8rem;
+        position: absolute;
     }
     .logo{
         display: none;
+        position: absolute;
     }
     
     .cards
@@ -352,43 +369,58 @@ body{
         justify-content: center;
         align-items: center;
         background-color: aqua;
-        width: 60rem;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 7rem;
     }   
     .card:nth-child(1){
-        margin-top: 1rem;
+        margin-top: 5rem;
     }
     
     .card:nth-child(2){
-        margin-top: 1rem;
+        margin-top: 5rem;
     }
     .card:nth-child(3){
-        margin-top: 1rem;
+        margin-top: 5rem;
     }
     .card:nth-child(4){
         margin-top: 1rem;
     }
     
     .burgerlinks{
-        margin-top: 16rem;
-        margin-left: -10.5rem;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        background-color: aqua;
+        height: 25rem;
     }
     .container
     {
-        width: 60rem;
+        width: 100%;
+        height: 100%;
         background-image: none;
+        position: absolute;
+        background-color: aqua;
     }
+    body{
+        background-color: aqua;
+    }
+    
     .modal .text
     {
         background-color: black;
-        margin-top: 1rem;
+        margin-top: 3rem;
     }
     .modal{
         background-color: aqua;
-        width: 60rem;
+        width: 100%;
     }
     .hamburger 
     {
         margin-left: 0;
+        margin-bottom: 25rem;
     }
     .burger{
         padding: 0;
@@ -396,10 +428,4 @@ body{
         left: 0px;
         margin-left: 0px;
     }
-
-    .links
-    {
-        font-weight: 500;
-    }
-
 }
