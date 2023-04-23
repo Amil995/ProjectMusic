@@ -215,11 +215,34 @@ body{
 
 /*Modal*/
 
+.cards.cards.active{
+    filter: blur(10px);
+    transition: 3s;
+}
+.cards.cards.close{
+    filter: blur(0px);
+}
+.header.header.active{
+    filter: blur(10px);
+    transition: 3s;
+}
+.header.header.close{
+    filter: blur(0px);
+}
+.modal.modal.active{
+    filter: blur(10px);
+    transition: 3s;
+}
+.modal.modal.close{
+    filter: blur(0px);
+}
+
 .modal{
     text-align: center;
     width: 1139px;
     display: grid;
     justify-content: center;
+    filter: blur(0px);
 }
 .modal .text{
     background-color: aqua;
