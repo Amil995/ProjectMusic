@@ -18,10 +18,10 @@ body{
     display: grid;
     justify-content: center;
     transition: 30s;
-    max-width: 1300px;
+    max-width: 1351px;
     max-height: 1000px;
     height: 700px;
-    width: 1300px;
+    width: 1351px;
     background-image: url(https://xmple.com/wallpaper/gradient-purple-blue-linear-1366x768-c2-00008b-8b008b-a-90-f-14.svg);
 }
 
