@@ -18,7 +18,6 @@ body{
     margin: 0 auto;
     padding:0;
     transition: 30s;
-    max-height: 1000px;
     width: 100%;
     height: 700px;
     background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700329497.jpg);
@@ -29,7 +28,7 @@ body{
     display: flex;
     justify-content: flex-start;
     position: fixed;
-    width:100%;
+    width: 100%;
 }
 
 .back img{
@@ -110,5 +109,6 @@ body{
     p{
         width: 100%;
         height: 100%;
+
     }
 }
