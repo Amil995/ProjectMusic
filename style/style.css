@@ -19,10 +19,9 @@ body{
     justify-content: center;
     transition: 30s;
     max-width: 1351px;
-    max-height: 1000px;
-    height: 700px;
+    height: 100%;
     width: 1351px;
-    background-image: url(https://xmple.com/wallpaper/gradient-purple-blue-linear-1366x768-c2-00008b-8b008b-a-90-f-14.svg);
+    background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700329497.jpg);
 }
 
 .header{
@@ -57,8 +56,8 @@ body{
 .header .hamburger .burger div{
     width: 30px;
     height: 4px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     margin: 2px;
     transition: 2s;
     border-radius: 5px;
@@ -66,6 +65,10 @@ body{
 .header .hamburger{
     margin-left: 230px;
     cursor: pointer;
+}
+.hamburger .burger:hover div{
+   background-color: aqua;
+   transition: 0s;
 }
 
 /*Hamburger End*/
@@ -140,7 +143,7 @@ body{
 .cards{
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 80px;
 }
 
 .cards .card{
@@ -152,9 +155,26 @@ body{
 .cards .card img{
     width: 200px;
     height: 250px;
-    margin-top: 5px;
+    margin-top: 2px;
     transition: 1s;
     position: absolute;
+}
+
+#card5 img{
+    width:230px;
+    margin-left: -15px;
+}
+#card6 img{
+    width:230px;
+    margin-left: -15px;
+}
+#card7 img{
+    width:230px;
+    margin-left: -15px;
+}
+#card8 img{
+    width:230px;
+    margin-left: -15px;
 }
 
 
@@ -236,6 +256,13 @@ body{
 .modal.modal.close{
     filter: blur(0px);
 }
+#cards#cards.active{
+    filter: blur(10px);
+    transition: 3s;
+}
+#cards#cards.close{
+    filter: blur(0px);
+}
 
 .modal{
     text-align: center;
@@ -243,6 +270,7 @@ body{
     display: grid;
     justify-content: center;
     filter: blur(0px);
+    margin-top: 50px;
 }
 .modal .text{
     background-color: aqua;
@@ -402,7 +430,6 @@ body{
         height: 100%;
         background-image: none;
         position: absolute;
-        background-color: aqua;
     }
     body{
         background-color: aqua;
