@@ -435,6 +435,7 @@ body{
         margin-top: 3rem;
     }
     .modal{
+        background-color: aqua;
         width: 100%;
     }
     .hamburger 
