@@ -13,12 +13,14 @@ const modal = document.querySelector(".window");
 const show = document.querySelector(".text");
 const send = document.querySelector(".send-button");
 const modal1 = document.querySelector(".modal");
+const cards1 = document.querySelector("#cards");
 
 
 show.addEventListener("click", () => {
     modal.style.display = "flex";
     console.log("works");
     cards.classList.toggle("active");
+    cards1.classList.toggle("active");
     header.classList.toggle("active");
     modal1.classList.toggle("active");
 } );
@@ -29,6 +31,7 @@ close.addEventListener("click", () => {
    cards.classList.toggle("close");
    header.classList.toggle("close");
    modal1.classList.toggle("close");
+   cards1.classList.toggle("close");
 });
 
 
@@ -38,6 +41,7 @@ send.addEventListener("click", () => {
     cards.classList.toggle("close");
     header.classList.toggle("close");
     modal1.classList.toggle("close");
+    cards1.classList.toggle("close");
 });
 
 function myFunction() {
